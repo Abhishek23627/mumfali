@@ -15,10 +15,8 @@ export default function Footer() {
   }
 
   return (
-    <footer
-      style={{ background: '#1E0A04' }}
-      className="text-brand-cream/70"
-    >
+    <footer style={{ background: '#1E0A04' }} className="text-brand-cream/70">
+
       {/* Top section */}
       <div className="container-wide py-14 md:py-16">
         <div className="grid md:grid-cols-3 gap-10">
@@ -27,12 +25,12 @@ export default function Footer() {
           <div>
             <Logo variant="light" size={40} className="mb-4"/>
             <p className="text-sm leading-relaxed mb-4 max-w-xs">
-              Traditional roasted in-shell peanuts, packed for today's everyday snacking.
+              Traditional roasted in-shell peanuts, packed for today&apos;s everyday snacking.
               Preparing to launch.
             </p>
             <div className="flex items-center gap-2 text-xs text-brand-cream/40">
               <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse-soft"/>
-              Idea Stage Â· Pre-launch
+              Idea Stage &middot; Pre-launch
             </div>
           </div>
 
@@ -65,18 +63,12 @@ export default function Footer() {
                 <p className="text-brand-cream/80">Shivani Kumari</p>
               </div>
               <div>
-                <a
-                  href="mailto:Avhi6311@gmail.com"
-                  className="text-brand-cream/70 hover:text-brand-gold transition-colors break-all"
-                >
+                <a href="mailto:Avhi6311@gmail.com" className="text-brand-cream/70 hover:text-brand-gold transition-colors break-all">
                   Avhi6311@gmail.com
                 </a>
               </div>
               <div>
-                <a
-                  href="tel:+916287974490"
-                  className="text-brand-cream/70 hover:text-brand-gold transition-colors"
-                >
+                <a href="tel:+916287974490" className="text-brand-cream/70 hover:text-brand-gold transition-colors">
                   +91 62879 74490
                 </a>
               </div>
@@ -91,7 +83,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="container-wide py-5">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-brand-cream/30">
-          <p>Â© {new Date().getFullYear()} MUNGFALI Time Pass. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mungfali Time Pass. All rights reserved.</p>
           <p className="text-center">
             This website is for promotional and brand awareness purposes.
             Products are not yet commercially available.

@@ -16,39 +16,28 @@ export default function App() {
   return (
     <>
       <Navbar />
-
       <main>
-        {/* 1 â€” Hero */}
+        {/* 1 - Hero */}
         <Hero />
-
-        {/* 2 â€” Story */}
+        {/* 2 - Story */}
         <Story />
-
-        {/* 3 â€” Product */}
+        {/* 3 - Product */}
         <Product />
-
-        {/* 4 â€” Format Comparison */}
+        {/* 4 - Format Comparison */}
         <FormatComparison />
-
-        {/* 5 â€” Everyday Moments */}
+        {/* 5 - Everyday Moments */}
         <Moments />
-
-        {/* 6 â€” Process */}
+        {/* 6 - Process */}
         <Process />
-
-        {/* 7 â€” Roadmap */}
+        {/* 7 - Roadmap */}
         <Roadmap />
-
-        {/* 8 â€” Early Interest CTA */}
+        {/* 8 - Early Interest CTA */}
         <LaunchCTA />
-
-        {/* 9 â€” Partnership / Investment */}
+        {/* 9 - Partnership / Investment */}
         <Partnership />
-
-        {/* 10 â€” Contact */}
+        {/* 10 - Contact */}
         <Contact />
       </main>
-
       <Footer />
     </>
   )

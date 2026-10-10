@@ -47,47 +47,36 @@ function ScrollIndicator() {
 export default function Hero() {
   const particlesRef = useRef(null)
 
-  /* Randomly position particles on mount */
   useEffect(() => {
     if (!particlesRef.current) return
     const items = particlesRef.current.querySelectorAll('.particle-item')
     items.forEach((el) => {
-      el.style.left   = Math.random() * 100 + '%'
-      el.style.top    = Math.random() * 80 + '%'
-      el.style.animationDelay    = Math.random() * 4 + 's'
+      el.style.left             = Math.random() * 100 + '%'
+      el.style.top              = Math.random() * 80 + '%'
+      el.style.animationDelay   = Math.random() * 4 + 's'
       el.style.animationDuration = (4 + Math.random() * 4) + 's'
     })
   }, [])
 
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-  }
-  const scrollToLaunch = () => {
-    document.getElementById('launch')?.scrollIntoView({ behavior: 'smooth' })
-  }
+  const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+  const scrollToLaunch  = () => document.getElementById('launch')?.scrollIntoView({ behavior: 'smooth' })
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden"
-      style={{
-        background: 'linear-gradient(135deg, #3D1F10 0%, #6B3A2A 40%, #8B4E3A 70%, #5A2E1A 100%)',
-      }}
+      style={{ background: 'linear-gradient(135deg, #3D1F10 0%, #6B3A2A 40%, #8B4E3A 70%, #5A2E1A 100%)' }}
     >
       {/* Grain texture */}
       <div
         className="absolute inset-0 opacity-30 pointer-events-none"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
-        }}
+        style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")` }}
       />
 
       {/* Radial glow */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'radial-gradient(ellipse 60% 60% at 65% 50%, rgba(200,150,30,0.18) 0%, transparent 70%)',
-        }}
+        style={{ background: 'radial-gradient(ellipse 60% 60% at 65% 50%, rgba(200,150,30,0.18) 0%, transparent 70%)' }}
       />
 
       {/* Floating peanut particles */}
@@ -96,15 +85,12 @@ export default function Hero() {
           <PeanutPod
             key={i}
             className="particle-item absolute animate-float"
-            style={{
-              width: 24 + i * 8 + 'px',
-              opacity: 0.08 + i * 0.02,
-            }}
+            style={{ width: 24 + i * 8 + 'px', opacity: 0.08 + i * 0.02 }}
           />
         ))}
       </div>
 
-      {/* Large decorative circle */}
+      {/* Decorative circle */}
       <div
         className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/3 pointer-events-none"
         style={{
@@ -119,7 +105,7 @@ export default function Hero() {
       {/* Main content */}
       <div className="container-wide relative z-10 grid md:grid-cols-2 gap-12 items-center pt-28 pb-20 md:pt-32 md:pb-24">
 
-        {/* LEFT â€” Copy */}
+        {/* LEFT - Copy */}
         <div className="flex flex-col items-start gap-6 md:gap-8">
 
           {/* Badge */}
@@ -143,9 +129,9 @@ export default function Hero() {
             Traditional roasted in-shell peanuts, packed for today's everyday snacking.
           </p>
 
-          {/* Product spec pill */}
+          {/* Product spec pills */}
           <div className="flex flex-wrap gap-2">
-            {['100g Pack', 'Roasted In-Shell', 'Proposed MRP â‚¹20â€“â‚¹30'].map(tag => (
+            {['100g Pack', 'Roasted In-Shell', 'Proposed MRP \u20b920\u2013\u20b930'].map(tag => (
               <span
                 key={tag}
                 className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/10 border border-white/20 text-brand-cream/90"
@@ -157,57 +143,35 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-3 pt-2">
-            <button onClick={scrollToContact} className="btn-primary">
-              Get in Touch
-            </button>
-            <button onClick={scrollToLaunch} className="btn-outline-cream">
-              Be the First to Try
-            </button>
+            <button onClick={scrollToContact} className="btn-primary">Get in Touch</button>
+            <button onClick={scrollToLaunch}  className="btn-outline-cream">Be the First to Try</button>
           </div>
 
           {/* Hindi tagline */}
-          <p
-            className="text-brand-cream/50 text-sm"
-            style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}
-          >
-            à¤®à¥‹à¤¨à¤«à¤²à¥€ à¤Ÿà¤¾à¤‡à¤® à¤ªà¤¾à¤¸ â€” à¤œà¤¬ à¤­à¥€ à¤«à¥à¤°à¥à¤¸à¤¤ à¤®à¤¿à¤²à¥‡
+          <p className="text-brand-cream/50 text-sm" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>
+            मुंगफली टाइम पास &mdash; जब भी फुर्सत मिले
           </p>
         </div>
 
-        {/* RIGHT â€” Product Pouch */}
+        {/* RIGHT - Product Pouch */}
         <div className="flex justify-center items-center relative">
-          {/* Glow ring behind pouch */}
+          {/* Glow ring */}
           <div
             className="absolute rounded-full"
             style={{
-              width: '80%',
-              paddingBottom: '80%',
+              width: '80%', paddingBottom: '80%',
               background: 'radial-gradient(circle, rgba(200,150,30,0.22) 0%, transparent 70%)',
               filter: 'blur(30px)',
             }}
           />
-
-          {/* Pouch illustration */}
-          <div
-            className="relative z-10 animate-float pouch-shadow"
-            style={{ width: 'clamp(240px, 38vw, 380px)' }}
-          >
+          {/* Pouch */}
+          <div className="relative z-10 animate-float pouch-shadow" style={{ width: 'clamp(240px, 38vw, 380px)' }}>
             <PouchSVG />
           </div>
-
-          {/* Small floating peanuts around pouch */}
-          <PeanutPod
-            className="absolute -top-4 -left-4 animate-float-slow"
-            style={{ width: 48, opacity: 0.5 }}
-          />
-          <PeanutPod
-            className="absolute bottom-8 -right-6 animate-float-fast"
-            style={{ width: 36, opacity: 0.4, animationDelay: '2s' }}
-          />
-          <PeanutPod
-            className="absolute top-1/2 -left-8 animate-float"
-            style={{ width: 28, opacity: 0.35, animationDelay: '1s' }}
-          />
+          {/* Floating peanuts around pouch */}
+          <PeanutPod className="absolute -top-4 -left-4 animate-float-slow"  style={{ width: 48, opacity: 0.5 }} />
+          <PeanutPod className="absolute bottom-8 -right-6 animate-float-fast" style={{ width: 36, opacity: 0.4, animationDelay: '2s' }} />
+          <PeanutPod className="absolute top-1/2 -left-8 animate-float"       style={{ width: 28, opacity: 0.35, animationDelay: '1s' }} />
         </div>
       </div>
 
@@ -217,13 +181,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom wave */}
-      <svg
-        className="absolute bottom-0 left-0 w-full"
-        viewBox="0 0 1440 60"
-        fill="none"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
+      <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" aria-hidden="true">
         <path d="M0,60 C360,0 1080,60 1440,20 L1440,60 Z" fill="#FAF0DC"/>
       </svg>
     </section>

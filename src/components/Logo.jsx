@@ -1,16 +1,16 @@
 import React from 'react'
 
 /**
- * MUNGFALI Time Pass brand logo.
+ * Mungfali Time Pass brand logo.
  * variant: 'dark' (default) | 'light' | 'icon-only'
  * size: number (height px, default 44)
  */
 export default function Logo({ variant = 'dark', size = 44, className = '' }) {
-  const textColor   = variant === 'light' ? '#FAF0DC' : '#6B3A2A'
-  const subColor    = variant === 'light' ? 'rgba(250,240,220,0.75)' : '#8B4E3A'
+  const textColor = variant === 'light' ? '#FAF0DC' : '#6B3A2A'
+  const subColor  = variant === 'light' ? 'rgba(250,240,220,0.75)' : '#8B4E3A'
 
   return (
-    <div className={`flex items-center gap-2.5 select-none ${className}`} aria-label="MUNGFALI Time Pass">
+    <div className={`flex items-center gap-2.5 select-none ${className}`} aria-label="Mungfali Time Pass">
       {/* Icon mark */}
       <svg
         width={size}
@@ -22,18 +22,14 @@ export default function Logo({ variant = 'dark', size = 44, className = '' }) {
       >
         {/* Background circle */}
         <circle cx="22" cy="22" r="22" fill="#6B3A2A"/>
-
-        {/* Peanut pod shape â€” outer shell */}
+        {/* Peanut pod shape - outer shell */}
         <ellipse cx="22" cy="17" rx="7.5" ry="5" fill="#C8961E" opacity="0.9"/>
         <ellipse cx="22" cy="27" rx="7.5" ry="5" fill="#C8961E" opacity="0.9"/>
-
         {/* Middle notch */}
         <rect x="15" y="21" width="14" height="2" fill="#6B3A2A"/>
-
         {/* Peanut seeds inside */}
         <ellipse cx="22" cy="17" rx="4.5" ry="3" fill="#E07B2A"/>
         <ellipse cx="22" cy="27" rx="4.5" ry="3" fill="#E07B2A"/>
-
         {/* Highlight shine */}
         <ellipse cx="19.5" cy="15.5" rx="1.5" ry="1" fill="rgba(255,255,255,0.3)" transform="rotate(-20 19.5 15.5)"/>
         <ellipse cx="19.5" cy="25.5" rx="1.5" ry="1" fill="rgba(255,255,255,0.3)" transform="rotate(-20 19.5 25.5)"/>
@@ -52,7 +48,7 @@ export default function Logo({ variant = 'dark', size = 44, className = '' }) {
               lineHeight: 1.1,
             }}
           >
-            MUNGFALI
+            Mungfali
           </span>
           <span
             style={{

@@ -3,31 +3,31 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const MOMENTS = [
   {
-    icon: 'ðŸš‚',
+    icon: '\uD83D\uDE82',
     title: 'Railway Journey',
     desc: 'A window seat, passing fields, and a pack of moongphali. Some things never change.',
     color: 'from-amber-900/30 to-amber-800/20',
   },
   {
-    icon: 'ðŸµ',
+    icon: '\u2615',
     title: 'Evening Tea Break',
-    desc: 'When the chai arrives and conversation slows â€” the peanuts come out.',
+    desc: 'When the chai arrives and conversation slows \u2014 the peanuts come out.',
     color: 'from-orange-900/30 to-orange-800/20',
   },
   {
-    icon: 'ðŸŽ¬',
+    icon: '\uD83C\uDFAC',
     title: 'Movie at Home',
     desc: 'The unofficial snack of every Indian movie night. Low volume, big flavour.',
     color: 'from-red-900/30 to-red-800/20',
   },
   {
-    icon: 'ðŸšŒ',
+    icon: '\uD83D\uDE8C',
     title: 'Bus Travel',
-    desc: 'Long rides, short patience â€” a familiar bag of peanuts makes the distance shorter.',
+    desc: 'Long rides, short patience \u2014 a familiar bag of peanuts makes the distance shorter.',
     color: 'from-yellow-900/30 to-yellow-800/20',
   },
   {
-    icon: 'ðŸ‘¨â€ðŸ‘©â€ðŸ‘§â€ðŸ‘¦',
+    icon: '\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC67\u200D\uD83D\uDC66',
     title: 'Casual Gatherings',
     desc: 'Spread a newspaper, crack the shells, start the conversation. Everyone joins in.',
     color: 'from-amber-800/30 to-amber-700/20',
@@ -57,13 +57,13 @@ export default function Story() {
           </span>
         </div>
 
-        {/* Main headline */}
+        {/* Headline */}
         <div className="reveal reveal-delay-1 text-center mb-6">
           <h2
             className="text-display text-brand-brown leading-tight"
             style={{ fontSize: 'clamp(2rem, 4.5vw, 3.2rem)' }}
           >
-            Some Snacks Don't Need<br />
+            Some Snacks Don&apos;t Need<br />
             <em className="italic text-brand-orange">an Introduction.</em>
           </h2>
         </div>
@@ -77,14 +77,15 @@ export default function Story() {
             with shells cracking between conversations.
           </p>
           <p className="text-brand-muted text-lg leading-relaxed">
-            This isn't just a snack. It's a ritual. A universal time-pass that cuts
+            This isn&apos;t just a snack. It&apos;s a ritual. A universal time-pass that cuts
             across cities, states, and generations.
           </p>
         </div>
 
-        {/* Transition statement */}
+        {/* Pull quote */}
         <div className="reveal reveal-delay-3 mb-16">
-          <div className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden"
+          <div
+            className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden"
             style={{ background: 'linear-gradient(135deg, #6B3A2A 0%, #8B4E3A 100%)' }}
           >
             <div className="px-8 py-10 md:px-12 md:py-12 relative z-10">
@@ -92,9 +93,9 @@ export default function Story() {
                 className="text-display text-brand-cream text-center italic leading-relaxed"
                 style={{ fontSize: 'clamp(1.15rem, 2.5vw, 1.5rem)' }}
               >
-                "MUNGFALI Time Pass brings that familiar experience into a cleaner,
-                more convenient, branded format â€” so the ritual travels with you,
-                wherever you go."
+                &ldquo;Mungfali Time Pass brings that familiar experience into a cleaner,
+                more convenient, branded format &mdash; so the ritual travels with you,
+                wherever you go.&rdquo;
               </p>
             </div>
             {/* Decorative peanut silhouettes */}
@@ -111,18 +112,19 @@ export default function Story() {
           </div>
         </div>
 
-        {/* Occasion cards */}
+        {/* Occasion cards heading */}
         <div className="reveal reveal-delay-4 mb-6">
           <h3 className="text-display text-brand-brown text-center text-2xl md:text-3xl mb-10">
             Made for Every Occasion
           </h3>
         </div>
 
+        {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {MOMENTS.map((m, i) => (
             <div
               key={m.title}
-              className={`reveal reveal-delay-${Math.min(i + 1, 5)} card-lift rounded-2xl p-6 border border-brand-beige/60 bg-gradient-to-br ${m.color} backdrop-blur-sm`}
+              className={`reveal reveal-delay-${Math.min(i + 1, 5)} card-lift rounded-2xl p-6 border border-brand-beige/60 backdrop-blur-sm`}
               style={{ background: '#FFF8EC' }}
             >
               <div className="text-4xl mb-4">{m.icon}</div>

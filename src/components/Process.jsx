@@ -2,49 +2,22 @@ import React from 'react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const STEPS = [
-  {
-    number: '01',
-    icon: 'ðŸŒ¾',
-    title: 'Source',
-    desc: 'Quality in-shell peanuts sourced from trusted agricultural suppliers.',
-  },
-  {
-    number: '02',
-    icon: 'ðŸ”¥',
-    title: 'Roast',
-    desc: 'Controlled dry-roasting to achieve consistent flavour and crunch.',
-  },
-  {
-    number: '03',
-    icon: 'âœ‹',
-    title: 'Sort',
-    desc: 'Peanuts sorted by size and quality. Standard peanuts go into the main 100g pack.',
-  },
-  {
-    number: '04',
-    icon: 'âœ…',
-    title: 'Quality Check',
-    desc: 'Batch-level checks to maintain product consistency before packaging.',
-  },
-  {
-    number: '05',
-    icon: 'ðŸ“¦',
-    title: 'Pack',
-    desc: 'Sealed in hygienic, branded 100g pouches, ready for retail distribution.',
-  },
+  { number: '01', icon: '\uD83C\uDF3E', title: 'Source',        desc: 'Quality in-shell peanuts sourced from trusted agricultural suppliers.' },
+  { number: '02', icon: '\uD83D\uDD25', title: 'Roast',         desc: 'Controlled dry-roasting to achieve consistent flavour and crunch.' },
+  { number: '03', icon: '\u270B',       title: 'Sort',          desc: 'Peanuts sorted by size and quality. Standard peanuts go into the main 100g pack.' },
+  { number: '04', icon: '\u2705',       title: 'Quality Check', desc: 'Batch-level checks to maintain product consistency before packaging.' },
+  { number: '05', icon: '\uD83D\uDCE6', title: 'Pack',          desc: 'Sealed in hygienic, branded 100g pouches, ready for retail distribution.' },
 ]
 
 const BYPRODUCT = [
   {
     label: 'Standard Peanuts',
-    arrow: 'â†’',
     output: 'Main Product (100g Pouch)',
     color: '#6B3A2A',
     outputColor: '#E07B2A',
   },
   {
     label: 'Smaller / Split Peanuts',
-    arrow: 'â†’',
     output: 'Potential Value-Added Uses (Planned)',
     color: '#8B4E3A',
     outputColor: '#C8961E',
@@ -82,32 +55,22 @@ export default function Process() {
           </p>
         </div>
 
-        {/* Process steps â€” desktop: horizontal flow, mobile: vertical */}
+        {/* Desktop horizontal flow */}
         <div className="reveal reveal-delay-2 mb-16">
-
-          {/* Desktop horizontal */}
           <div className="hidden md:flex items-start justify-between relative">
-            {/* Connecting line */}
             <div
               className="absolute top-7 left-0 right-0 h-0.5 pointer-events-none"
               style={{ background: 'linear-gradient(90deg, #E07B2A, #C8961E, #E07B2A, #C8961E, #E07B2A)' }}
             />
-
             {STEPS.map((step, i) => (
-              <div
-                key={step.number}
-                className="flex flex-col items-center text-center flex-1 px-2 relative z-10"
-              >
-                {/* Numbered circle */}
+              <div key={step.number} className="flex flex-col items-center text-center flex-1 px-2 relative z-10">
                 <div
                   className="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 border-4 border-brand-cream"
                   style={{ background: i % 2 === 0 ? '#6B3A2A' : '#E07B2A' }}
                 >
                   {step.icon}
                 </div>
-                <span className="text-xs font-bold text-brand-gold uppercase tracking-widest mb-1">
-                  {step.number}
-                </span>
+                <span className="text-xs font-bold text-brand-gold uppercase tracking-widest mb-1">{step.number}</span>
                 <h4 className="font-bold text-brand-brown mb-1 text-base">{step.title}</h4>
                 <p className="text-brand-muted text-xs leading-relaxed max-w-[140px]">{step.desc}</p>
               </div>
@@ -130,7 +93,7 @@ export default function Process() {
                 </div>
                 <div className="pt-2">
                   <span className="text-xs font-bold text-brand-gold uppercase tracking-widest mb-0.5 block">
-                    {step.number} â€” {step.title}
+                    {step.number} &mdash; {step.title}
                   </span>
                   <p className="text-brand-muted text-sm leading-relaxed">{step.desc}</p>
                 </div>
@@ -139,20 +102,16 @@ export default function Process() {
           </div>
         </div>
 
-        {/* By-product utilisation model */}
+        {/* Utilisation model */}
         <div className="reveal reveal-delay-3">
           <div className="rounded-2xl border border-brand-beige bg-white p-8 md:p-10">
             <div className="text-center mb-8">
-              <h3 className="text-display text-brand-brown text-xl md:text-2xl mb-2">
-                Planned Utilisation Model
-              </h3>
+              <h3 className="text-display text-brand-brown text-xl md:text-2xl mb-2">Planned Utilisation Model</h3>
               <p className="text-brand-muted text-sm max-w-lg mx-auto">
                 The proposed operating model aims to make efficient use of the full peanut
-                batch through thoughtful sorting. This is an operational goal, not a
-                confirmed outcome.
+                batch through thoughtful sorting. This is an operational goal, not a confirmed outcome.
               </p>
             </div>
-
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {BYPRODUCT.map((b) => (
                 <div
@@ -166,7 +125,7 @@ export default function Process() {
                   >
                     {b.label}
                   </div>
-                  <span className="text-brand-gold text-xl font-bold">{b.arrow}</span>
+                  <span className="text-brand-gold text-xl font-bold">&rarr;</span>
                   <div
                     className="flex-shrink-0 px-4 py-2 rounded-lg text-sm font-semibold text-brand-cream text-center"
                     style={{ background: b.outputColor, minWidth: 160 }}

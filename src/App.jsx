@@ -18,34 +18,34 @@ export default function App() {
       <Navbar />
 
       <main>
-        {/* 1 — Hero */}
+        {/* 1 â€” Hero */}
         <Hero />
 
-        {/* 2 — Story */}
+        {/* 2 â€” Story */}
         <Story />
 
-        {/* 3 — Product */}
+        {/* 3 â€” Product */}
         <Product />
 
-        {/* 4 — Format Comparison */}
+        {/* 4 â€” Format Comparison */}
         <FormatComparison />
 
-        {/* 5 — Everyday Moments */}
+        {/* 5 â€” Everyday Moments */}
         <Moments />
 
-        {/* 6 — Process */}
+        {/* 6 â€” Process */}
         <Process />
 
-        {/* 7 — Roadmap */}
+        {/* 7 â€” Roadmap */}
         <Roadmap />
 
-        {/* 8 — Early Interest CTA */}
+        {/* 8 â€” Early Interest CTA */}
         <LaunchCTA />
 
-        {/* 9 — Partnership / Investment */}
+        {/* 9 â€” Partnership / Investment */}
         <Partnership />
 
-        {/* 10 — Contact */}
+        {/* 10 â€” Contact */}
         <Contact />
       </main>
 

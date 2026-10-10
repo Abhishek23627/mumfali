@@ -1,7 +1,7 @@
 import React from 'react'
 
 /**
- * Moanfali Time Pass brand logo.
+ * MUNGFALI Time Pass brand logo.
  * variant: 'dark' (default) | 'light' | 'icon-only'
  * size: number (height px, default 44)
  */
@@ -10,7 +10,7 @@ export default function Logo({ variant = 'dark', size = 44, className = '' }) {
   const subColor    = variant === 'light' ? 'rgba(250,240,220,0.75)' : '#8B4E3A'
 
   return (
-    <div className={`flex items-center gap-2.5 select-none ${className}`} aria-label="Moanfali Time Pass">
+    <div className={`flex items-center gap-2.5 select-none ${className}`} aria-label="MUNGFALI Time Pass">
       {/* Icon mark */}
       <svg
         width={size}
@@ -23,7 +23,7 @@ export default function Logo({ variant = 'dark', size = 44, className = '' }) {
         {/* Background circle */}
         <circle cx="22" cy="22" r="22" fill="#6B3A2A"/>
 
-        {/* Peanut pod shape — outer shell */}
+        {/* Peanut pod shape â€” outer shell */}
         <ellipse cx="22" cy="17" rx="7.5" ry="5" fill="#C8961E" opacity="0.9"/>
         <ellipse cx="22" cy="27" rx="7.5" ry="5" fill="#C8961E" opacity="0.9"/>
 
@@ -52,7 +52,7 @@ export default function Logo({ variant = 'dark', size = 44, className = '' }) {
               lineHeight: 1.1,
             }}
           >
-            Moanfali
+            MUNGFALI
           </span>
           <span
             style={{

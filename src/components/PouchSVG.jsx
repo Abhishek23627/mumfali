@@ -1,7 +1,7 @@
 import React from 'react'
 
 /**
- * SVG illustration of the Moanfali Time Pass 100g product pouch.
+ * SVG illustration of the MUNGFALI Time Pass 100g product pouch.
  * Designed to look like a premium Indian snack pouch.
  */
 export default function PouchSVG({ className = '', style = {} }) {
@@ -13,9 +13,9 @@ export default function PouchSVG({ className = '', style = {} }) {
       className={className}
       style={style}
       role="img"
-      aria-label="Moanfali Time Pass 100g roasted peanut pouch"
+      aria-label="MUNGFALI Time Pass 100g roasted peanut pouch"
     >
-      {/* ── Pouch body ─────────────────────────────────── */}
+      {/* â”€â”€ Pouch body â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <defs>
         <linearGradient id="pouchGrad" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0%"   stopColor="#8B4E3A"/>
@@ -60,27 +60,27 @@ export default function PouchSVG({ className = '', style = {} }) {
         />
       </g>
 
-      {/* ── Top heat-seal ──────────────────────────────── */}
+      {/* â”€â”€ Top heat-seal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <rect x="30" y="14" width="220" height="28" rx="4" fill="url(#topSeal)"/>
       {/* Tear notch */}
       <path d="M235,14 L245,20 L235,26 Z" fill="#C8961E" opacity="0.6"/>
 
-      {/* ── Orange accent band ─────────────────────────── */}
+      {/* â”€â”€ Orange accent band â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <rect x="30" y="78" width="220" height="8" fill="url(#orangeBand)" opacity="0.9"/>
       <rect x="30" y="294" width="220" height="8" fill="url(#orangeBand)" opacity="0.9"/>
 
-      {/* ── Logo area (top label block) ────────────────── */}
+      {/* â”€â”€ Logo area (top label block) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {/* Brand name bg */}
       <rect x="44" y="90" width="192" height="72" rx="6" fill="rgba(200,150,30,0.12)" stroke="#C8961E" strokeWidth="0.5" strokeOpacity="0.3"/>
 
-      {/* MOANFALI wordmark */}
+      {/* MUNGFALI wordmark */}
       <text
         x="140" y="120"
         textAnchor="middle"
         fill="#FAF0DC"
         style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, fontSize: 22, letterSpacing: 1 }}
       >
-        MOANFALI
+        MUNGFALI
       </text>
 
       {/* Decorative divider */}
@@ -96,8 +96,8 @@ export default function PouchSVG({ className = '', style = {} }) {
         TIME PASS
       </text>
 
-      {/* ── Centre peanut illustration ─────────────────── */}
-      {/* Large peanut pod – left */}
+      {/* â”€â”€ Centre peanut illustration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* Large peanut pod â€“ left */}
       <g transform="translate(68, 175)">
         <ellipse cx="18" cy="22" rx="16" ry="20" fill="#C8961E" opacity="0.85"/>
         <ellipse cx="18" cy="58" rx="16" ry="20" fill="#C8961E" opacity="0.85"/>
@@ -107,7 +107,7 @@ export default function PouchSVG({ className = '', style = {} }) {
         <ellipse cx="13" cy="16" rx="3.5" ry="2" fill="rgba(255,255,255,0.25)" transform="rotate(-20 13 16)"/>
       </g>
 
-      {/* Large peanut pod – right */}
+      {/* Large peanut pod â€“ right */}
       <g transform="translate(174, 175)">
         <ellipse cx="18" cy="22" rx="16" ry="20" fill="#C8961E" opacity="0.85"/>
         <ellipse cx="18" cy="58" rx="16" ry="20" fill="#C8961E" opacity="0.85"/>
@@ -117,7 +117,7 @@ export default function PouchSVG({ className = '', style = {} }) {
         <ellipse cx="13" cy="16" rx="3.5" ry="2" fill="rgba(255,255,255,0.25)" transform="rotate(-20 13 16)"/>
       </g>
 
-      {/* Small peanut pod – centre */}
+      {/* Small peanut pod â€“ centre */}
       <g transform="translate(118, 185) scale(0.85)">
         <ellipse cx="22" cy="24" rx="18" ry="22" fill="#C8961E" opacity="0.9"/>
         <ellipse cx="22" cy="66" rx="18" ry="22" fill="#C8961E" opacity="0.9"/>
@@ -132,7 +132,7 @@ export default function PouchSVG({ className = '', style = {} }) {
         <circle key={i} cx={x} cy={270} r={2.5} fill="#C8961E" opacity={0.3 + i * 0.08}/>
       ))}
 
-      {/* ── Bottom info panel ──────────────────────────── */}
+      {/* â”€â”€ Bottom info panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <rect x="44" y="304" width="192" height="50" rx="4" fill="rgba(0,0,0,0.15)"/>
 
       {/* Net weight */}
@@ -163,10 +163,10 @@ export default function PouchSVG({ className = '', style = {} }) {
         fill="#FAF0DC"
         style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: 9, letterSpacing: 1 }}
       >
-        MRP ₹20–₹30
+        MRP â‚¹20â€“â‚¹30
       </text>
 
-      {/* ── Bottom seal ───────────────────────────────── */}
+      {/* â”€â”€ Bottom seal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <path
         d="M30,340 Q30,368 56,368 L224,368 Q250,368 250,340 L248,355 Q248,372 224,375 L56,375 Q32,375 32,355 Z"
         fill="#3D1F10"

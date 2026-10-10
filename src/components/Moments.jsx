@@ -3,35 +3,35 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const OCCASIONS = [
   {
-    emoji: '🚂',
+    emoji: 'ðŸš‚',
     title: 'Travel',
     subtitle: 'On the Go',
-    desc: 'Railway journeys, bus rides, road trips — Moanfali Time Pass fits in every bag and every moment.',
+    desc: 'Railway journeys, bus rides, road trips â€” MUNGFALI Time Pass fits in every bag and every moment.',
     bg: '#6B3A2A',
   },
   {
-    emoji: '☕',
+    emoji: 'â˜•',
     title: 'Tea Break',
     subtitle: 'Chai Time',
-    desc: 'When the afternoon slows and the kettle boils — the perfect companion for every sip.',
+    desc: 'When the afternoon slows and the kettle boils â€” the perfect companion for every sip.',
     bg: '#8B4E3A',
   },
   {
-    emoji: '🎬',
+    emoji: 'ðŸŽ¬',
     title: 'Movie Time',
     subtitle: 'Reel Snacking',
     desc: 'The crunch is part of the plot. In-shell peanuts are the original Indian movie snack.',
     bg: '#5A2E1A',
   },
   {
-    emoji: '🤝',
+    emoji: 'ðŸ¤',
     title: 'Gatherings',
     subtitle: 'Shared Moments',
     desc: 'Spread the shells, share the stories. Peanuts bring people closer without a word.',
     bg: '#7A3E28',
   },
   {
-    emoji: '🌇',
+    emoji: 'ðŸŒ‡',
     title: 'Evening Snack',
     subtitle: 'Sunset Ritual',
     desc: 'The evening sun, a park bench, and your favourite time-pass. Some routines are worth keeping.',
@@ -64,11 +64,11 @@ export default function Moments() {
           >
             Whenever There's Time to Pass,
             <br />
-            <em className="italic text-brand-orange">There's Moanfali.</em>
+            <em className="italic text-brand-orange">There's MUNGFALI.</em>
           </h2>
         </div>
 
-        {/* Cards — horizontal scroll on mobile, grid on desktop */}
+        {/* Cards â€” horizontal scroll on mobile, grid on desktop */}
         <div className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory md:grid md:grid-cols-5 md:overflow-visible md:pb-0">
           {OCCASIONS.map((o, i) => (
             <div
@@ -99,7 +99,7 @@ export default function Moments() {
           <p
             className="text-display italic text-brand-brown/60 text-xl"
           >
-            The snack that needs no occasion — except time.
+            The snack that needs no occasion â€” except time.
           </p>
         </div>
       </div>

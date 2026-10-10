@@ -4,31 +4,31 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 const STEPS = [
   {
     number: '01',
-    icon: '🌾',
+    icon: 'ðŸŒ¾',
     title: 'Source',
     desc: 'Quality in-shell peanuts sourced from trusted agricultural suppliers.',
   },
   {
     number: '02',
-    icon: '🔥',
+    icon: 'ðŸ”¥',
     title: 'Roast',
     desc: 'Controlled dry-roasting to achieve consistent flavour and crunch.',
   },
   {
     number: '03',
-    icon: '✋',
+    icon: 'âœ‹',
     title: 'Sort',
     desc: 'Peanuts sorted by size and quality. Standard peanuts go into the main 100g pack.',
   },
   {
     number: '04',
-    icon: '✅',
+    icon: 'âœ…',
     title: 'Quality Check',
     desc: 'Batch-level checks to maintain product consistency before packaging.',
   },
   {
     number: '05',
-    icon: '📦',
+    icon: 'ðŸ“¦',
     title: 'Pack',
     desc: 'Sealed in hygienic, branded 100g pouches, ready for retail distribution.',
   },
@@ -37,14 +37,14 @@ const STEPS = [
 const BYPRODUCT = [
   {
     label: 'Standard Peanuts',
-    arrow: '→',
+    arrow: 'â†’',
     output: 'Main Product (100g Pouch)',
     color: '#6B3A2A',
     outputColor: '#E07B2A',
   },
   {
     label: 'Smaller / Split Peanuts',
-    arrow: '→',
+    arrow: 'â†’',
     output: 'Potential Value-Added Uses (Planned)',
     color: '#8B4E3A',
     outputColor: '#C8961E',
@@ -82,7 +82,7 @@ export default function Process() {
           </p>
         </div>
 
-        {/* Process steps — desktop: horizontal flow, mobile: vertical */}
+        {/* Process steps â€” desktop: horizontal flow, mobile: vertical */}
         <div className="reveal reveal-delay-2 mb-16">
 
           {/* Desktop horizontal */}
@@ -130,7 +130,7 @@ export default function Process() {
                 </div>
                 <div className="pt-2">
                   <span className="text-xs font-bold text-brand-gold uppercase tracking-widest mb-0.5 block">
-                    {step.number} — {step.title}
+                    {step.number} â€” {step.title}
                   </span>
                   <p className="text-brand-muted text-sm leading-relaxed">{step.desc}</p>
                 </div>

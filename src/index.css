@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ─── Base Resets ─────────────────────────────────── */
+/* â”€â”€â”€ Base Resets â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
@@ -19,15 +19,15 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── Custom Scrollbar ────────────────────────────── */
+/* â”€â”€â”€ Custom Scrollbar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #FAF0DC; }
 ::-webkit-scrollbar-thumb { background: #C8961E; border-radius: 3px; }
 
-/* ─── Selection ───────────────────────────────────── */
+/* â”€â”€â”€ Selection â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 ::selection { background: #E07B2A; color: #fff; }
 
-/* ─── Utilities ───────────────────────────────────── */
+/* â”€â”€â”€ Utilities â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @layer utilities {
   .text-display { font-family: 'Playfair Display', Georgia, serif; }
   .text-body    { font-family: 'Inter', system-ui, sans-serif; }
@@ -46,7 +46,7 @@ body {
   }
 }
 
-/* ─── Scroll-reveal ───────────────────────────────── */
+/* â”€â”€â”€ Scroll-reveal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .reveal {
   opacity: 0;
   transform: translateY(32px);
@@ -62,7 +62,7 @@ body {
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
 
-/* ─── Peanut floating particles ───────────────────── */
+/* â”€â”€â”€ Peanut floating particles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .peanut-particle {
   position: absolute;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
@@ -70,7 +70,7 @@ body {
   pointer-events: none;
 }
 
-/* ─── Card hover lift ─────────────────────────────── */
+/* â”€â”€â”€ Card hover lift â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .card-lift {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -79,7 +79,7 @@ body {
   box-shadow: 0 20px 48px rgba(107, 58, 42, 0.15);
 }
 
-/* ─── Button styles ───────────────────────────────── */
+/* â”€â”€â”€ Button styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .btn-primary {
   @apply inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-white transition-all duration-300;
   background: linear-gradient(135deg, #E07B2A, #C8961E);
@@ -114,19 +114,19 @@ body {
   color: #6B3A2A;
 }
 
-/* ─── Navbar ──────────────────────────────────────── */
+/* â”€â”€â”€ Navbar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .nav-scrolled {
   background: rgba(250, 240, 220, 0.96) !important;
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 20px rgba(107, 58, 42, 0.08);
 }
 
-/* ─── Product pouch ───────────────────────────────── */
+/* â”€â”€â”€ Product pouch â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .pouch-shadow {
   filter: drop-shadow(0 24px 48px rgba(107, 58, 42, 0.35));
 }
 
-/* ─── Process line connector ──────────────────────── */
+/* â”€â”€â”€ Process line connector â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .process-line {
   position: absolute;
   top: 28px;
@@ -136,19 +136,19 @@ body {
   background: linear-gradient(90deg, #E07B2A, #C8961E);
 }
 
-/* ─── Form focus ──────────────────────────────────── */
+/* â”€â”€â”€ Form focus â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .form-input:focus {
   outline: none;
   border-color: #E07B2A;
   box-shadow: 0 0 0 3px rgba(224, 123, 42, 0.15);
 }
 
-/* ─── Comparison table ────────────────────────────── */
+/* â”€â”€â”€ Comparison table â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .compare-check  { color: #16a34a; }
 .compare-cross  { color: #dc2626; }
 .compare-dash   { color: #9ca3af; }
 
-/* ─── Mobile menu ─────────────────────────────────── */
+/* â”€â”€â”€ Mobile menu â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .mobile-menu {
   transition: transform 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.35s ease;
 }

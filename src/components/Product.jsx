@@ -7,7 +7,7 @@ const FEATURES = [
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden="true">
         <rect width="40" height="40" rx="12" fill="#6B3A2A" opacity="0.1"/>
-        <text x="20" y="27" textAnchor="middle" fontSize="20">🥜</text>
+        <text x="20" y="27" textAnchor="middle" fontSize="20">ðŸ¥œ</text>
       </svg>
     ),
     title: '100g Pack',
@@ -18,18 +18,18 @@ const FEATURES = [
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden="true">
         <rect width="40" height="40" rx="12" fill="#E07B2A" opacity="0.1"/>
-        <text x="20" y="27" textAnchor="middle" fontSize="20">🔥</text>
+        <text x="20" y="27" textAnchor="middle" fontSize="20">ðŸ”¥</text>
       </svg>
     ),
     title: 'Roasted In-Shell',
-    desc: 'The classic peanut experience — in-shell, freshly roasted, the way it has always been enjoyed.',
+    desc: 'The classic peanut experience â€” in-shell, freshly roasted, the way it has always been enjoyed.',
     tag: 'Product Type',
   },
   {
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden="true">
         <rect width="40" height="40" rx="12" fill="#C8961E" opacity="0.1"/>
-        <text x="20" y="27" textAnchor="middle" fontSize="20">📦</text>
+        <text x="20" y="27" textAnchor="middle" fontSize="20">ðŸ“¦</text>
       </svg>
     ),
     title: 'Hygienic Packaging',
@@ -40,11 +40,11 @@ const FEATURES = [
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden="true">
         <rect width="40" height="40" rx="12" fill="#6B3A2A" opacity="0.1"/>
-        <text x="20" y="27" textAnchor="middle" fontSize="20">💰</text>
+        <text x="20" y="27" textAnchor="middle" fontSize="20">ðŸ’°</text>
       </svg>
     ),
     title: 'Affordable',
-    desc: 'Proposed MRP of ₹20–₹30. Accessible to impulse buyers across kirana stores and retail counters.',
+    desc: 'Proposed MRP of â‚¹20â€“â‚¹30. Accessible to impulse buyers across kirana stores and retail counters.',
     tag: 'Pricing',
   },
 ]
@@ -82,7 +82,7 @@ export default function Product() {
         {/* Main product layout */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* Left — Pouch 3D style */}
+          {/* Left â€” Pouch 3D style */}
           <div className="reveal reveal-delay-2 flex justify-center">
             <div className="relative">
               {/* Shadow disc */}
@@ -113,7 +113,7 @@ export default function Product() {
             </div>
           </div>
 
-          {/* Right — Feature cards */}
+          {/* Right â€” Feature cards */}
           <div className="grid sm:grid-cols-2 gap-4">
             {FEATURES.map((f, i) => (
               <div
@@ -138,7 +138,7 @@ export default function Product() {
               Initial production target:
             </span>
             <span className="text-brand-orange font-bold text-sm">
-              1,000–5,000 packets/day
+              1,000â€“5,000 packets/day
             </span>
             <span className="text-brand-muted text-xs">(scalable by demand)</span>
           </div>

@@ -75,7 +75,7 @@ export default function FormatComparison() {
             Why This Format?
           </h2>
           <p className="text-brand-muted text-lg mt-4 max-w-xl mx-auto">
-            We're not reinventing the peanut — we're giving it a better home.
+            We're not reinventing the peanut â€” we're giving it a better home.
             This is a format evolution, not a product revolution.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function FormatComparison() {
                 <th className="bg-brand-brown text-left px-6 py-4 text-sm font-semibold text-brand-cream w-[37.5%]">
                   <div className="flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-brand-gold flex-shrink-0"/>
-                    Moanfali Time Pass
+                    MUNGFALI Time Pass
                   </div>
                 </th>
               </tr>

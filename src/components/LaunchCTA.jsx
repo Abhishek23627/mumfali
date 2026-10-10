@@ -81,7 +81,7 @@ export default function LaunchCTA() {
 
           <div className="reveal reveal-delay-2 text-center mb-10">
             <p className="text-brand-muted text-lg leading-relaxed">
-              Moanfali Time Pass is preparing to bring a familiar Indian snack into a
+              MUNGFALI Time Pass is preparing to bring a familiar Indian snack into a
               modern packaged format. Register your interest and be among the first
               to know when we launch.
             </p>
@@ -90,9 +90,9 @@ export default function LaunchCTA() {
           {/* Form card */}
           <div className="reveal reveal-delay-3">
             {status === 'success' ? (
-              /* ─── Success state ─── */
+              /* â”€â”€â”€ Success state â”€â”€â”€ */
               <div className="rounded-2xl border border-green-200 bg-green-50 p-10 text-center">
-                <div className="text-5xl mb-4">🎉</div>
+                <div className="text-5xl mb-4">ðŸŽ‰</div>
                 <h3 className="text-display text-brand-brown text-2xl font-bold mb-3">Thank You!</h3>
                 <p className="text-brand-muted text-base leading-relaxed">
                   We've received your interest and will get in touch with you shortly.
@@ -109,7 +109,7 @@ export default function LaunchCTA() {
                 </button>
               </div>
             ) : (
-              /* ─── Form ─── */
+              /* â”€â”€â”€ Form â”€â”€â”€ */
               <form
                 onSubmit={handleSubmit}
                 noValidate
@@ -207,7 +207,7 @@ export default function LaunchCTA() {
                     rows={3}
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="Tell us anything — where you'd buy it, what price works for you, etc."
+                    placeholder="Tell us anything â€” where you'd buy it, what price works for you, etc."
                     className="form-input w-full rounded-xl border border-brand-beige px-4 py-3 text-sm bg-brand-cream/50 resize-none"
                   />
                 </div>
@@ -223,7 +223,7 @@ export default function LaunchCTA() {
                       className="mt-1 w-4 h-4 accent-brand-orange flex-shrink-0"
                     />
                     <span className="text-xs text-brand-muted leading-relaxed">
-                      I consent to Moanfali Time Pass storing and using my contact details to
+                      I consent to MUNGFALI Time Pass storing and using my contact details to
                       follow up about this expression of interest. I understand this is not an order.
                     </span>
                   </label>
@@ -242,7 +242,7 @@ export default function LaunchCTA() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
                       </svg>
-                      Registering…
+                      Registeringâ€¦
                     </span>
                   ) : 'Register Your Interest'}
                 </button>

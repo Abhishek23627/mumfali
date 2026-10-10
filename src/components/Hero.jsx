@@ -119,7 +119,7 @@ export default function Hero() {
       {/* Main content */}
       <div className="container-wide relative z-10 grid md:grid-cols-2 gap-12 items-center pt-28 pb-20 md:pt-32 md:pb-24">
 
-        {/* LEFT — Copy */}
+        {/* LEFT â€” Copy */}
         <div className="flex flex-col items-start gap-6 md:gap-8">
 
           {/* Badge */}
@@ -145,7 +145,7 @@ export default function Hero() {
 
           {/* Product spec pill */}
           <div className="flex flex-wrap gap-2">
-            {['100g Pack', 'Roasted In-Shell', 'Proposed MRP ₹20–₹30'].map(tag => (
+            {['100g Pack', 'Roasted In-Shell', 'Proposed MRP â‚¹20â€“â‚¹30'].map(tag => (
               <span
                 key={tag}
                 className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/10 border border-white/20 text-brand-cream/90"
@@ -170,11 +170,11 @@ export default function Hero() {
             className="text-brand-cream/50 text-sm"
             style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}
           >
-            मोनफली टाइम पास — जब भी फुर्सत मिले
+            à¤®à¥‹à¤¨à¤«à¤²à¥€ à¤Ÿà¤¾à¤‡à¤® à¤ªà¤¾à¤¸ â€” à¤œà¤¬ à¤­à¥€ à¤«à¥à¤°à¥à¤¸à¤¤ à¤®à¤¿à¤²à¥‡
           </p>
         </div>
 
-        {/* RIGHT — Product Pouch */}
+        {/* RIGHT â€” Product Pouch */}
         <div className="flex justify-center items-center relative">
           {/* Glow ring behind pouch */}
           <div

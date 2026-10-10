@@ -7,7 +7,7 @@ const PHASES = [
     title: 'Validate',
     status: 'Current Focus',
     statusColor: '#E07B2A',
-    icon: '🔬',
+    icon: 'ðŸ”¬',
     desc: 'Local pilot launch. Validate the product, the price point, and the consumer response in a controlled market.',
     items: ['Local retail pilot', 'Consumer feedback', 'Price point validation', 'Kirana store partnerships'],
     dotColor: '#E07B2A',
@@ -17,7 +17,7 @@ const PHASES = [
     title: 'Scale',
     status: 'Planned',
     statusColor: '#C8961E',
-    icon: '📈',
+    icon: 'ðŸ“ˆ',
     desc: 'Expand production capacity and distribution reach based on validated demand from Phase 1.',
     items: ['Scale to 5,000+ packets/day', 'Expand city coverage', 'Retail distribution networks', 'Brand visibility investment'],
     dotColor: '#C8961E',
@@ -27,7 +27,7 @@ const PHASES = [
     title: 'Expand',
     status: 'Future Vision',
     statusColor: '#6B3A2A',
-    icon: '🚀',
+    icon: 'ðŸš€',
     desc: 'Introduce regional flavour variants and explore additional peanut-based product lines.',
     items: ['Spicy Masala (planned)', 'Salt & Pepper (planned)', 'Regional flavor variants', 'New product formats'],
     dotColor: '#6B3A2A',
@@ -70,7 +70,7 @@ export default function Roadmap() {
             <em className="italic text-brand-gold">Thinking Bigger.</em>
           </h2>
           <p className="text-brand-cream/70 text-lg mt-4 max-w-xl mx-auto">
-            A focused, phased approach — from local validation to regional scale.
+            A focused, phased approach â€” from local validation to regional scale.
           </p>
         </div>
 
@@ -125,7 +125,7 @@ export default function Roadmap() {
               {/* Arrow connector (not on last) */}
               {i < 2 && (
                 <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full items-center justify-center bg-brand-gold text-white text-xs font-bold shadow-lg">
-                  →
+                  â†’
                 </div>
               )}
             </div>
@@ -145,7 +145,7 @@ export default function Roadmap() {
               Flavour development will follow market validation.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['🌶️ Spicy Masala', '🧂 Salt & Pepper', '🌿 Regional Variants', '+ More (TBD)'].map(f => (
+              {['ðŸŒ¶ï¸ Spicy Masala', 'ðŸ§‚ Salt & Pepper', 'ðŸŒ¿ Regional Variants', '+ More (TBD)'].map(f => (
                 <span
                   key={f}
                   className="px-5 py-2.5 rounded-full text-sm font-medium border border-brand-gold/40 text-brand-cream/80"

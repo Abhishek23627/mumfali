@@ -3,31 +3,31 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const MOMENTS = [
   {
-    icon: '🚂',
+    icon: 'ðŸš‚',
     title: 'Railway Journey',
     desc: 'A window seat, passing fields, and a pack of moongphali. Some things never change.',
     color: 'from-amber-900/30 to-amber-800/20',
   },
   {
-    icon: '🍵',
+    icon: 'ðŸµ',
     title: 'Evening Tea Break',
-    desc: 'When the chai arrives and conversation slows — the peanuts come out.',
+    desc: 'When the chai arrives and conversation slows â€” the peanuts come out.',
     color: 'from-orange-900/30 to-orange-800/20',
   },
   {
-    icon: '🎬',
+    icon: 'ðŸŽ¬',
     title: 'Movie at Home',
     desc: 'The unofficial snack of every Indian movie night. Low volume, big flavour.',
     color: 'from-red-900/30 to-red-800/20',
   },
   {
-    icon: '🚌',
+    icon: 'ðŸšŒ',
     title: 'Bus Travel',
-    desc: 'Long rides, short patience — a familiar bag of peanuts makes the distance shorter.',
+    desc: 'Long rides, short patience â€” a familiar bag of peanuts makes the distance shorter.',
     color: 'from-yellow-900/30 to-yellow-800/20',
   },
   {
-    icon: '👨‍👩‍👧‍👦',
+    icon: 'ðŸ‘¨â€ðŸ‘©â€ðŸ‘§â€ðŸ‘¦',
     title: 'Casual Gatherings',
     desc: 'Spread a newspaper, crack the shells, start the conversation. Everyone joins in.',
     color: 'from-amber-800/30 to-amber-700/20',
@@ -92,8 +92,8 @@ export default function Story() {
                 className="text-display text-brand-cream text-center italic leading-relaxed"
                 style={{ fontSize: 'clamp(1.15rem, 2.5vw, 1.5rem)' }}
               >
-                "Moanfali Time Pass brings that familiar experience into a cleaner,
-                more convenient, branded format — so the ritual travels with you,
+                "MUNGFALI Time Pass brings that familiar experience into a cleaner,
+                more convenient, branded format â€” so the ritual travels with you,
                 wherever you go."
               </p>
             </div>

@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const INTEREST_OPTIONS = [
-  { value: 'customer',    label: 'Customer — I want to try the product' },
-  { value: 'retailer',   label: 'Retailer — I want to stock this product' },
-  { value: 'distributor',label: 'Distributor — I can help with distribution' },
-  { value: 'investor',   label: 'Investor — I\'m interested in the opportunity' },
+  { value: 'customer',    label: 'Customer â€” I want to try the product' },
+  { value: 'retailer',   label: 'Retailer â€” I want to stock this product' },
+  { value: 'distributor',label: 'Distributor â€” I can help with distribution' },
+  { value: 'investor',   label: 'Investor â€” I\'m interested in the opportunity' },
   { value: 'other',      label: 'Other' },
 ]
 
@@ -57,7 +57,7 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
 
-          {/* Left — contact info */}
+          {/* Left â€” contact info */}
           <div>
             <div className="reveal mb-4">
               <span className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-brand-gold border-b-2 border-brand-gold/50 pb-1">
@@ -78,7 +78,7 @@ export default function Contact() {
 
             <div className="reveal reveal-delay-2 mb-8">
               <p className="text-brand-cream/70 text-lg leading-relaxed">
-                Whether you're a consumer, retailer, or partner — we'd love to hear from you.
+                Whether you're a consumer, retailer, or partner â€” we'd love to hear from you.
                 Reach out and we'll get back to you promptly.
               </p>
             </div>
@@ -89,8 +89,8 @@ export default function Contact() {
               <div className="rounded-2xl p-6 border border-white/10" style={{ background: 'rgba(255,255,255,0.05)' }}>
                 <h4 className="text-brand-gold text-xs font-bold uppercase tracking-widest mb-3">The Team</h4>
                 <div className="space-y-2">
-                  <p className="text-brand-cream font-semibold">Abhishek Kumar — <span className="text-brand-cream/70 font-normal">Founder</span></p>
-                  <p className="text-brand-cream font-semibold">Shivani Kumari — <span className="text-brand-cream/70 font-normal">Co-Founder</span></p>
+                  <p className="text-brand-cream font-semibold">Abhishek Kumar â€” <span className="text-brand-cream/70 font-normal">Founder</span></p>
+                  <p className="text-brand-cream font-semibold">Shivani Kumari â€” <span className="text-brand-cream/70 font-normal">Co-Founder</span></p>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ export default function Contact() {
                 style={{ background: 'rgba(255,255,255,0.05)' }}
               >
                 <div className="w-10 h-10 rounded-full bg-brand-orange/20 flex items-center justify-center text-xl flex-shrink-0">
-                  ✉️
+                  âœ‰ï¸
                 </div>
                 <div>
                   <p className="text-brand-cream/50 text-xs uppercase tracking-wide mb-0.5">Email</p>
@@ -118,7 +118,7 @@ export default function Contact() {
                 style={{ background: 'rgba(255,255,255,0.05)' }}
               >
                 <div className="w-10 h-10 rounded-full bg-brand-orange/20 flex items-center justify-center text-xl flex-shrink-0">
-                  📞
+                  ðŸ“ž
                 </div>
                 <div>
                   <p className="text-brand-cream/50 text-xs uppercase tracking-wide mb-0.5">Phone / WhatsApp</p>
@@ -139,11 +139,11 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right — contact form */}
+          {/* Right â€” contact form */}
           <div className="reveal reveal-delay-3">
             {status === 'success' ? (
               <div className="rounded-2xl border border-green-400/30 bg-green-900/20 p-10 text-center">
-                <div className="text-5xl mb-4">✅</div>
+                <div className="text-5xl mb-4">âœ…</div>
                 <h3 className="text-display text-brand-cream text-2xl font-bold mb-3">Message Received!</h3>
                 <p className="text-brand-cream/70 text-base">
                   Thank you for reaching out. We'll get back to you as soon as possible.
@@ -237,7 +237,7 @@ export default function Contact() {
                 {/* Interest */}
                 <div>
                   <label className="block text-xs font-semibold text-brand-cream/70 mb-1.5 uppercase tracking-wide">
-                    I Am A… *
+                    I Am Aâ€¦ *
                   </label>
                   <select
                     name="interest"
@@ -282,7 +282,7 @@ export default function Contact() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
                       </svg>
-                      Sending…
+                      Sendingâ€¦
                     </span>
                   ) : 'Send Message'}
                 </button>

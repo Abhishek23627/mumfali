@@ -79,7 +79,7 @@ export default function LaunchCTA() {
           <div className="reveal reveal-delay-3">
             {status === 'success' ? (
               <div className="rounded-2xl border border-green-200 bg-green-50 p-10 text-center">
-                <div className="text-5xl mb-4">\uD83C\uDF89</div>
+                <div className="text-5xl mb-4">🎉</div>
                 <h3 className="text-display text-brand-brown text-2xl font-bold mb-3">Thank You!</h3>
                 <p className="text-brand-muted text-base leading-relaxed">
                   We&apos;ve received your interest and will get in touch with you shortly.
